@@ -1459,6 +1459,9 @@ def build_message_send_dict(message_dict: Dict[str, Any],
     # code block).
     if message_dict['message'].mentions_wildcard:
         message_dict['wildcard_mention_user_ids'] = info['wildcard_mention_user_ids']
+
+        # TODO: Delete this commit once we have the generic feature implemented.
+        raise JsonableError(_("Wildcard mentions not allowed."))
     else:
         message_dict['wildcard_mention_user_ids'] = []
 
