@@ -108,6 +108,7 @@ zrequire("notifications");
 zrequire("pm_conversations");
 zrequire("pm_list");
 zrequire("list_cursor");
+zrequire("localstorage");
 zrequire("keydown_util");
 zrequire("stream_sort");
 zrequire("stream_list");
